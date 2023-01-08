@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,25 +9,28 @@
     <link rel="stylesheet" href="lib/bootstrap-5.2.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="lib/fontawesome-free-6.2.1-web/css/all.min.css">
     <style>
-        .avatar{
+        .avatar {
             height: 30px;
             width: 30px;
             transition-duration: 0.5s;
         }
-        .avatar:hover{
+
+        .avatar:hover {
             z-index: 5;
             transform: scale(1.1);
         }
-        .overlap{
+
+        .overlap {
             margin-left: -10px;
 
         }
-        .email:hover::after{
+
+        .email:hover::after {
             content: '\2709';
         }
-
     </style>
 </head>
+
 <body>
     <div class="container-fluid">
         <table class="table table-primary table-bordered table-striped-columns">
@@ -37,7 +41,7 @@
                     <th>Name</th>
                     <th>Email</th>
                     <th>Action</th>
-                    
+
                 </tr>
             </thead>
             <tbody>
@@ -45,14 +49,14 @@
                     <td>1</td>
                     <td>
                         <div class="d-flex">
-                            <img class="avatar rounded-pill border border-warning overlap" src="/avatar1.png" alt="">
+                            <img class="avatar rounded-pill border border-warning overlap" src="/boostsrap/avatar1.png" alt="avatar">
                         </div>
                     </td>
                     <td>user</td>
                     <td>
                         <div class="email">
-                        user@gmail.com
-                        <span class="badge rounded-pill bg-success">&check;</span>
+                            user@gmail.com
+                            <span class="badge rounded-pill bg-success">&check;</span>
                         </div>
                     </td>
                     <td>
@@ -72,15 +76,17 @@
                     <td>2</td>
                     <td>
                         <div class="d-flex">
-                            <img class="avatar rounded-pill border border-warning overlap" src="/avatar2.png" height="50px"  alt="avatar">
-                            <img class="avatar rounded-pill border border-warning overlap" src="/avatar1.png" height="50px" alt="avatar">
+                            <img class="avatar rounded-pill border border-warning overlap" src="/boostsrap/avatar1.png"
+                                height="50px" alt="avatar">
+                            <img class="avatar rounded-pill border border-warning overlap" src="/boostsrap/avatar2.png"
+                                height="50px" alt="avatar">
                         </div>
                     </td>
                     <td>admin</td>
 
                     <td>
                         <div class="email">
-                        admin@gmail.com
+                            admin@gmail.com
                         </div>
                     </td>
                     <td>
@@ -100,4 +106,5 @@
         </table>
     </div>
 </body>
+
 </html>

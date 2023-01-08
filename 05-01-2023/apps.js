@@ -5,6 +5,7 @@
 
 
 // form control
+
 // function handleSubmit(e){
 //     e.preventDefault();
 //     console.log(e);
@@ -14,6 +15,7 @@
 // }
 
 // to display email id and password
+
 // function handleSubmit(e){
 //     e.preventDefault();
 //     console.log(e);
@@ -25,7 +27,8 @@
 
 
 
-//to display the error message
+// to display the error message
+
 // function handleSubmit(e){
 //     e.preventDefault();
 //     console.log(e);
@@ -59,51 +62,51 @@
 
 
 
-function handleSubmit(e){
+function handleSubmit(e) {
     e.preventDefault();
     console.log(e);
     // const email = document.forms['login']['email'].value;
-    
+
     const age = document.forms.login.age;
     const email = document.forms.login.email;
     const password = document.forms.login.password;
 
-    
+
     const ageValue = age.value;
     const emailValue = email.value;
     const passwordValue = password.value;
-    
-   
 
-    if(emailValue.length < 6){
+
+
+    if (emailValue.length < 6) {
         email.style.border = '1px solid red';
         email.nextElementSibling.classList.remove('d-none');
     }
 
-    if(ageValue <= 18){
+    if (ageValue <= 18) {
         age.style.border = '1px solid red';
         age.nextElementSibling.classList.remove('d-none');
     }
 
     const ageErrorDisplay = age.nextElementSibling;
-    if(ageValue.length < 6){
+    if (ageValue.length < 6) {
         age.style.border = '1px solid red';
         age.nextElementSibling.classList.remove('d-none');
         ageErrorDisplay.innerHTML += '<li>Minimum age should be at least 18.</li>';
     }
 
     const passwordErrorDisplay = password.nextElementSibling;
-    if(passwordValue.length < 6){
+    if (passwordValue.length < 6) {
         password.style.border = '1px solid red';
         password.nextElementSibling.classList.remove('d-none');
         passwordErrorDisplay.innerHTML += '<li>Password must be at least 6 character.</li>';
     }
 
-    if(passwordValue.includes('')){
+    if (passwordValue.includes('')) {
         password.style.border = '1px solid red';
         password.nextElementSibling.classList.remove('d-none');
         passwordErrorDisplay.innerHTML += '<li>Password must not contgain space.</li>';
     }
-    
+
     console.log(email, "\n", password);
 }

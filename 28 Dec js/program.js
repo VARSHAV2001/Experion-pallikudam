@@ -29,41 +29,65 @@
 // var data = 'This is string';
 // console.log(data[data.length - 1]);
 
+
+
 // To uppercase
+
 // var data = "This is  string";
 // var res = data.toUpperCase();
 // console.log(res);
 
+
+
 // To lowercase
+
 // var data = "This is  string";
 // var res = data.toLowerCase();
 // console.log(res);
 
 
+// to remove the space
+
 // var message = '    JS for web   ';
 // console.log(message.trim());
 
+
+
 // to remove beginning space
+
 // var message = '    JS for web   ';
 // console.log(message.trimStart());
 
+
+
 // to remove end space
+
 // var message = '    JS for web   ';
 // console.log(message.trimEnd());
 
+
+
 // to split the word
+
 // var message = 'JS for web';
 // console.log(message.split(''));
 
+
+
 // to replace one to another 
+
 // var message = 'JS for web';
 // var res = message.replace(' ', '_');
 // console.log(res);
 
+
+
 // to replace all 
+
 // var message = 'JS for web';
 // var res = message.replaceAll(' ', '_');
 // console.log(res);
+
 
 
 // var message = 'JS for web';
@@ -73,18 +97,27 @@
 //     .replaceAll(' ', '_');
 // console.log(res);
 
+
+
 // To give constant value
+
 // const firstName = 'John';
 // const lastName = 'Doe';
 // console.log(firstName, lastName);
 
+
+
 // to give null value
+
 // let data = null;
 // console.log(data);
 
+
+
 // const should always initialize
-// const language = 'JS';
-// console.log(language);
+
+const language = 'JS';
+console.log(language);
 
 
 

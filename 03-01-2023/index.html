@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
     <!-- onClick event -->
@@ -155,7 +157,7 @@
         ];
 
         const target = document.getElementById('content');
-        users.forEach(user=>{
+        users.forEach(user => {
             const row = `<tr>
                             <td>${user.name}</td>
                             <td>${user.email}</td>
@@ -164,17 +166,18 @@
                             </td>
                         </tr>`;
             target.innerHTML += row;
-            
+
         });
-    
-        function deleteEvent(e){
+
+        function deleteEvent(e) {
             let alert = confirm(`User want to delete the row`);
-            if(alert){
-                   e.target.parentElement.parentElement.remove();
+            if (alert) {
+                e.target.parentElement.parentElement.remove();
             }
-            
+
         }
     </script>
 
 </body>
-</html> 
+
+</html>

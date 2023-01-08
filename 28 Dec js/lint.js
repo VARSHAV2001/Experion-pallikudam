@@ -1,6 +1,8 @@
 // const num1 = 4;
 // const num2 = 5;
-// // eslint-disable-next-line no-unused-vars
+
+// eslint-disable-next-line no-unused-vars
+
 // const res1 = num1 + '+' + num2 + '=' + (num1 + num2); 
 // const res2 = `${num1} + ${num2} = ${num1 + num2}`;
 // console.log(res1);

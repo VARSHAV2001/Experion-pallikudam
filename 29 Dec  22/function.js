@@ -4,6 +4,7 @@
 // greet();
 
 
+
 // greet();
 // function greet(){
 //     console.log("Hello World");
@@ -15,6 +16,7 @@
 //     console.log(x + y);
 // }
 // add(1, 2);
+
 
 
 // function add(x, y){
@@ -32,19 +34,24 @@
 // console.log(res.toLowerCase());
 
 
-// //Normal function
+
+// Normal function
 
 // function getFirstChar1(value){
 //     return value[0];
 // }
 
-// //anonymous function
+
+
+// anonymous function
 
 // const getFirstChar2 = function (value){
 //     return value[0];
 // };
 
-// // lamda/ Arrow function
+
+
+// lamda/ Arrow function
 
 // const getFirstChar3 = (value) => {
 //     return value[0];
@@ -55,10 +62,13 @@
 // console.log(getFirstChar3('Hello'));
 
 
-// //  if use the arrow function only one word is called don't need to give bracket
+
+// if use the arrow function only one word is called don't need to give bracket
 //  const getFirstChar = value  => value[0];
 
 // console.log(getFirstChar('Hello'));
+
+
 
 
 // check the even numbers in an array
@@ -80,27 +90,34 @@
 // console.log(evenNumbers);
 
 
+
+
 //  to fill one value in array
+
 // const numbers = [1, 2, 3, 4, 5, 6];
 // numbers.fill(10);
 // console.log(numbers);
 
 
+
+
 // to check the given value is contain the array
+
 // const numbers = [1, 2, 3, 4, 5, 6];
 // if(numbers.includes(5)){
 //     console.log('Array contains five');
 // }
 
 
+
 // to join the value b/w the values
-// const numbers = [1, 2, 3, 4, 5, 6];
-// console.log(numbers.toString());
-// console.log(numbers.join('->'));
+const numbers = [1, 2, 3, 4, 5, 6];
+console.log(numbers.toString());
+console.log(numbers.join('->'));
 
 
 
 
-// metrix
+
 
 

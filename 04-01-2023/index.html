@@ -14,20 +14,33 @@
 </head>
 
 <body>
-    <table class="table table-dark table-striped table-hover">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Avatar</th>
-                <th>Name</th>
-                <th>Email</th>
-            </tr>
-        </thead>
-        <tbody id="target">
-
-        </tbody>
-    </table>
-    <!-- <script>
+  <div class="d-flex flex-row bg-dark">
+    <input type="text" onkeyup="searchFunction(event)" class="form-control text-white bg-dark border-dark"
+      placeholder="Search" aria-label="Search">
+    <div class="dropdown">
+      <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Search By
+      </button>
+      <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
+        <button class="dropdown-item text-white bg-dark" href="" onclick="changeSearchBy(1)" id="name">Name</button>
+        <button class="dropdown-item text-white bg-dark" href="" onclick="changeSearchBy(2)" id="email">Email</button>
+      </div>
+    </div>
+  </div>
+  <table class="table table-dark table-striped table-hover">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Avatar</th>
+        <th>Name</th>
+        <th>Emaild</th>
+      </tr>
+    </thead>
+    <tbody id="target">
+    </tbody>
+  </table>
+  <!-- <script>
         const http = new XMLHttpRequest();
         http.onreadystatechange = function(){
             if (this.readyState == 4 && this.status == 200) {
@@ -42,11 +55,11 @@
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
+    </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+    </script>
 
   <script src="scripts/app.js"></script>
 </body>

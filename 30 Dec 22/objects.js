@@ -5,31 +5,33 @@
 
 
 // write in single line
+
 // const languages = ['c', 'c++', 'Java', 'Python'];
 // languages.forEach(lang => console.log(lang));
 
 
 
 // index
+
 // const languages = ['c', 'c++', 'Java', 'Python'];
 // languages.forEach((item, index) => {
-//    console.log(index, item);
+//     console.log(index, item);
 // });
 
 
 
 
-// // object
+// object
 // const person = {
 //     name: 'John Doe',
 //     age: 20
-
 // };
 // console.log(person);
 
 
 
-// //just want only on thing
+// just want only on thing
+
 // const person = {
 //     name: 'John Doe',
 //     age: 20
@@ -38,7 +40,8 @@
 // console.log(person.name);
 
 
-// // to display the details
+// to display the details
+
 // const person = {
 //     name: 'John Doe',
 //     age: 20,
@@ -49,22 +52,24 @@
 // console.log(person);
 
 
-// //call the data in different methods
+// call the data in different methods
+
 // const person = {
-//         name: 'John Doe',
-//         age: 20,
-//         email: null
-//     };
-//     person.name = 'New Name';
-//     person.email = 'user@example.com';
-//     console.log(person);
-//     console.log(person.name);
-//     console.log(person['name']);
+//     name: 'John Doe',
+//     age: 20,
+//     email: null
+// };
+// person.name = 'New Name';
+// person.email = 'user@example.com';
+// console.log(person);
+// console.log(person.name);
+// console.log(person['name']);
 
 
 
 
-// //to give multiple values
+// to give multiple values
+
 // const person = {
 //     name: 'John Doe',
 //     age: 20,
@@ -84,7 +89,8 @@
 
 
 
-// // to display all experience details
+// to display all experience details
+
 // const person = {
 //     name: 'John Doe',
 //     age: 20,
@@ -99,11 +105,12 @@
 //         }
 //     ]
 // };
-// person.experience.forEach(exp=>console.log(exp.company));
+// person.experience.forEach(exp => console.log(exp.company));
 
 
 
 // metrics
+
 // const m1 = [
 //     [1, 2],
 //     [3, 4]
@@ -112,23 +119,24 @@
 
 
 
-// // to give the time delay to work
-// setTimeout(()=>{
+// to give the time delay to work
+// setTimeout(() => {
 //     console.log('Code worked');
 // }, 5000);
 
 
 
-// // to give the time intervel
-// setInterval(()=>{
+// to give the time intervel
+
+// setInterval(() => {
 //     console.log('Code worked');
 // }, 5000);
 
 
 
 
-// // 
-// setInterval(()=>{
+
+// setInterval(() => {
 //     console.log('Code worked');
 // }, 5000);
 
@@ -147,11 +155,10 @@
 //     name: 'Student 1',
 //     mark1: 40,
 //     mark2: 50,
-//     total: function(){
+//     total: function () {
 //         console.log(this.mark1 + this.mark2);
 //     }
 // };
-
 // student.total();
 
 
@@ -160,22 +167,21 @@
 //     name: 'Student 1',
 //     mark1: 40,
 //     mark2: 50,
-//     total: function(){
+//     total: function () {
 //         const extraMark = 5;
 //         console.log(this.mark1 + this.mark2 + extraMark);
 //     }
 // };
-
 // student.total();
 
 
-// // to copy the data
-// const student = {
-//         name: 'Student 1',
-//         mark1: 40,
-//         mark2: 50
-// };
+// to copy the data
 
+// const student = {
+//     name: 'Student 1',
+//     mark1: 40,
+//     mark2: 50
+// };
 // const copy = Object.assign({}, student);
 // copy.name = 'New Name';
 // console.log(student);
@@ -183,7 +189,7 @@
 
 
 
-//to copy it can add extra property like that
+// to copy it can add extra property like that
 
 // const student = {
 //     name: 'Student 1',
@@ -191,17 +197,18 @@
 //     mark2: 50
 // };
 
-// const copy = Object.assign({age: 15}, student);
+// const copy = Object.assign({ age: 15 }, student);
 // copy.name = 'New Name';
 // console.log(student);
 // console.log(copy);
 
 
 
-//properties give to functions
+// properties give to functions
+
 // const student = {
 //     name: 'Student 1',
-    
+
 // };
 // const marks = {
 //     mark1: 40,
@@ -213,18 +220,21 @@
 
 
 
-//destructure
+// destructure
+
 // const student = {
-//         fullName: 'Student 1',
-//         mark1: 40,
-//         mark2: 50
-//     };
+//     fullName: 'Student 1',
+//     mark1: 40,
+//     mark2: 50
+// };
 
-//     const {fullName, mark1} = student;
-//     console.log(fullName);
+// const { fullName, mark1 } = student;
+// console.log(fullName);
 
 
-// important   
+
+// important
+
 // it used to display each value of object
 
 // const student = {
@@ -234,13 +244,14 @@
 // };
 
 // const keys = Object.keys(student);
-// keys.forEach(key=>{
+// keys.forEach(key => {
 //     console.log(student[key]);
 // });
 
 
 
 // to display the values
+
 const student = {
     fullName: 'Student 1',
     mark1: 40,
@@ -248,6 +259,6 @@ const student = {
 };
 
 const values = Object.values(student);
-values.forEach(value=>{
+values.forEach(value => {
     console.log(value);
 });
